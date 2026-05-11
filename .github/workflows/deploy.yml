@@ -12,7 +12,7 @@ jobs:
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-    step:
+    steps:
       # 1. 소스코드 체크아웃 ( gibhub 저장소를 clone하고 해당 폴더 안으로 들어가는 작업 대신 해줌)
       - uses: actions/checkout@v5
       
